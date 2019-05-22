@@ -1,0 +1,37 @@
+body {
+  color: white;
+  background: black;
+  font-size: 30px;
+  font-family: Arial;
+}
+
+#notes {
+}
+
+.line {
+  margin: 10px 0px;
+  font-size: 60%;
+  color: #858585;
+}
+
+.line.active {
+  font-size: 120%;
+  color: white;
+}
+
+.next,
+.prev {
+  font-size: 100%;
+  color: #adadad;
+}
+
+#timers {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+#slideCount {
+  position: fixed;
+  bottom: 0;
+}

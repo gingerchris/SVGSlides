@@ -1,0 +1,20 @@
+#thirtysix-logo-one,
+#thirtysix-logo-two,
+#thirtysix-logo-three {
+  opacity: 0;
+  transition: opacity 0s;
+}
+
+#thirtysix-logo-two {
+  transition-delay: 0.5s;
+}
+
+#thirtysix-logo-three {
+  transition-delay: 1s;
+}
+
+.step2 #thirtysix-logo-one,
+.step2 #thirtysix-logo-two,
+.step2 #thirtysix-logo-three {
+  opacity: 1;
+}

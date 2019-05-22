@@ -1,0 +1,25 @@
+@keyframes eightmotion {
+  0% {
+    transform: translate(120px, 50px);
+  }
+
+  25% {
+    transform: translate(700px, 70px);
+  }
+
+  50% {
+    transform: translate(700px, 350px);
+  }
+
+  75% {
+    transform: translate(10px, 400px);
+  }
+
+  100% {
+    transform: translate(120px, 50px);
+  }
+}
+
+.step2 #eight-motion {
+  animation: eightmotion 3s infinite;
+}

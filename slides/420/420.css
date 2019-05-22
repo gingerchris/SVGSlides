@@ -1,0 +1,51 @@
+@keyframes fourtytwo-flicker {
+  0% {
+    opacity: 1;
+  }
+  1% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  26% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+#fourtytwo-text {
+  opacity: 0;
+}
+
+.step4 #fourtytwo-text {
+  opacity: 1;
+}
+
+.step4 #fourtytwo-text tspan {
+  animation: fourtytwo-flicker 2s infinite linear;
+}
+
+.step4 #fourtytwo-text #fourtytwo-text-one {
+  animation-delay: 0.5s;
+}
+
+.step4 #fourtytwo-text #fourtytwo-text-two {
+  animation-delay: 1s;
+}
+
+.step4 #fourtytwo-text #fourtytwo-text-three {
+  animation-delay: 1.5s;
+}
+
+.step5 #fourtytwo-text tspan {
+  animation: none;
+}
+
+.step5 #fourtytwo-text #fourtytwo-text-two,
+.step5 #fourtytwo-text #fourtytwo-text-three,
+.step5 #fourtytwo-text #fourtytwo-text-four {
+  opacity: 0;
+}

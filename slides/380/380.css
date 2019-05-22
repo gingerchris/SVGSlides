@@ -1,0 +1,25 @@
+#thirtyeight-logo-one,
+#thirtyeight-logo-two,
+#thirtyeight-logo-three {
+  transition: all 3s ease-in-out;
+  width: 1px;
+  height: 1px;
+}
+
+.step2 #thirtyeight-logo-one {
+  opacity: 1;
+  width: 400px;
+  height: 400px;
+}
+
+.step3 #thirtyeight-logo-two {
+  opacity: 1;
+  width: 400px;
+  height: 121px;
+}
+
+.step4 #thirtyeight-logo-three {
+  opacity: 1;
+  width: 129px;
+  height: 450px;
+}

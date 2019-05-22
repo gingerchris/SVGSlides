@@ -1,0 +1,30 @@
+#twentyfive-rect,
+#twentyfive-circle,
+#twentyfive-radius,
+#twentyfive-rectCentrex,
+#twentyfive-rectCentrey {
+  transition: all 3s ease-in-out;
+}
+
+.show #twentyfive-rect {
+  width: 560px;
+  height: 426px;
+}
+
+.show #twentyfive-circle {
+  r: 215px;
+}
+
+.show #twentyfive-radius {
+  width: 3px;
+  height: 215px;
+  y: 235px;
+}
+
+.step2 #twentyfive-rectCentrex {
+  height: 213px;
+}
+
+.step2 #twentyfive-rectCentrey {
+  width: 283px;
+}

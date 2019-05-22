@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1440 900" version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Slide-38" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <text id="Logos" font-family="DINAlternate-Bold, DIN Alternate" font-size="50" font-weight="bold" fill="#000000">
+            <tspan x="20" y="57">Logos</tspan>
+        </text>
+        <use id="thirtyeight-logo-one" href="../../logos/round.svg#logo" x="179" y="141" width="1" height="1" />
+        <rect id="thirtyeight-rect-one" stroke="#979797" fill="url(#pattern-1)" x="179" y="141" width="0" height="0"></rect>
+        <use id="thirtyeight-logo-two" href="../../logos/round.svg#logo" x="720" y="141" width="1" height="1" />
+        <rect id="thirtyeight-rect-two" stroke="#979797" fill="url(#pattern-3)" x="720" y="141" width="0" height="0"></rect>
+        <use id="thirtyeight-logo-three" href="../../logos/round.svg#logo" x="1056" y="390" width="1" height="1" />
+        <rect id="thirtyeight-rect-three" stroke="#979797" fill="url(#pattern-5)" x="1056" y="391" width="0" height="0"></rect>
+    </g>
+</svg>

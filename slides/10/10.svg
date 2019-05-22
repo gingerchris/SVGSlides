@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1440 900" version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Slide 1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Slide-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 0.000000)" font-family="DINAlternate-Bold, DIN Alternate" font-size="100" font-weight="bold">
+        <text id="Saving-the-Planet-Us" fill="#000000">
+            <tspan x="356.328125" y="427">Saving the Planet</tspan>
+            <tspan x="500.737305" y="544">Using SVG</tspan>
+        </text>
+    </g>
+</svg>

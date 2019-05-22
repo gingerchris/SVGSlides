@@ -1,0 +1,53 @@
+#seven-myspace-header,
+#seven-myspace-content,
+#seven-skull-1,
+#seven-skull-2 {
+  transition: all 3s ease-in-out;
+}
+
+#seven-patternBackground {
+  transition: all 3s steps(5, end), opacity 0s;
+  opacity: 0;
+}
+
+#seven-myspace-header {
+  transition-duration: 1s;
+  transform: translateY(-200px);
+}
+
+#seven-myspace-content {
+  transition-duration: 1s;
+  transform: translate(125px, 900px);
+}
+
+.step2 #seven-patternBackground {
+  opacity: 1;
+}
+
+.step3 #seven-patternBackground {
+  width: 1500px;
+  height: 1500px;
+}
+
+.step4 #seven-skull-1 {
+  transition-duration: 1s;
+  fill: #e51689;
+}
+
+.step4 #seven-skull-2 {
+  transition-duration: 1s;
+  fill: #fff;
+}
+
+.step4 #seven-skull-bg {
+  transition-duration: 1s;
+  fill: black;
+}
+
+.step5 #seven-myspace-header {
+  transform: translateY(0);
+}
+
+.step5 #seven-myspace-content {
+  transform: translate(125px, 269px);
+}

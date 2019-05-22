@@ -1,0 +1,33 @@
+@keyframes onoff {
+  0% {
+    fill: #fff;
+    text-shadow: #fc0 1px 0 10px;
+  }
+
+  50% {
+    fill: #0067b9;
+    text-shadow: none;
+  }
+
+  100% {
+    fill: #fff;
+    text-shadow: #fc0 1px 0 10px;
+  }
+}
+
+#s,
+#a {
+  animation: onoff 1s infinite;
+}
+
+#a {
+  animation-delay: 0.5s;
+}
+
+#note {
+  opacity: 0;
+}
+
+.step2 #note {
+  opacity: 1;
+}

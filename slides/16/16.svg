@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1440 900" version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <g id="Slide-1.6" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="DINAlternate-Bold, DIN Alternate" font-size="100" font-weight="bold">
+        <text id="Understanding-the-tr" fill="#000000">
+            <tspan x="333.012695" y="251">Understanding the </tspan>
+            <tspan x="223.808594" y="368">trigonometry of rotating </tspan>
+            <tspan x="247.075195" y="485">vectors when arbitrary </tspan>
+            <tspan x="126.933594" y="602">rotational values are applied</tspan>
+        </text>
+    </g>
+</svg>

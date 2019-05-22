@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        pointer-events: none;
+      }
+
+      svg,
+      iframe {
+        position: fixed;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+        border: none;
+        pointer-events: none;
+        max-width: 100vw;
+        max-height: 100vh;
+      }
+      iframe {
+        width: 100vw;
+        height: 100vh;
+      }
+      #frame {
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe></iframe>
+    <svg id="frame" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg">
+      <text
+        fill="#000"
+        fill-rule="evenodd"
+        font-family="DINAlternate-Bold, DIN Alternate"
+        font-size="25"
+        font-weight="bold"
+      >
+        <tspan x="12" y="880">@gingerchris</tspan>
+      </text>
+    </svg>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/service-worker.js", {
+          scope: "/"
+        });
+      }
+    </script>
+    <script src="index.js"></script>
+    <script src="scripts/TweenMax.min.js"></script>
+  </body>
+</html>

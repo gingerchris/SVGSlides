@@ -1,0 +1,34 @@
+#nineteen-leftRect,
+#nineteen-rightRect {
+  transition: all 3s ease-in-out;
+}
+
+.step2 #nineteen-leftRect,
+.step2 #nineteen-rightRect {
+  width: 267px;
+  height: 386px;
+}
+
+.step3 #nineteen-leftRect {
+  transform: translate(333px, 237px);
+}
+
+.step3 #nineteen-rightRect {
+  transform: translate(366px, 237px);
+}
+
+.step3 #nineteen-clipLeft use {
+  transform: translate(-333px, -237px);
+}
+
+.step3 #nineteen-clipRight use {
+  transform: translate(-366px, -237px);
+}
+
+.step4 #nineteen-leftRect {
+  clip-path: url("#nineteen-clipLeft");
+}
+
+.step4 #nineteen-rightRect {
+  clip-path: url("#nineteen-clipRight");
+}

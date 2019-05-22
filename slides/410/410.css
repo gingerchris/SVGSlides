@@ -1,0 +1,9 @@
+#fourtyone-drive {
+  stroke-dasharray: 512.8045043945312;
+  stroke-dashoffset: 512.8045043945312;
+  transition: all 3s ease-in-out;
+}
+
+.step2 #fourtyone-drive {
+  stroke-dashoffset: 0;
+}

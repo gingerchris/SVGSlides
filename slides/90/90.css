@@ -1,0 +1,30 @@
+@keyframes ninemotion {
+  0% {
+    x: 20px;
+    y: 50px;
+  }
+
+  25% {
+    x: 700px;
+    y: 70px;
+  }
+
+  50% {
+    x: 700px;
+    y: 350px;
+  }
+
+  75% {
+    x: 10px;
+    y: 400px;
+  }
+
+  100% {
+    x: 20px;
+    y: 50px;
+  }
+}
+
+.step2 #nine-patternFilledElement {
+  animation: ninemotion 3s infinite;
+}

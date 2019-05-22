@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1440 900" version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <g id="Slide-40" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="DINAlternate-Bold, DIN Alternate" font-weight="bold">
+        <text id="Saving-the-Planet" font-size="50" fill="#000000">
+            <tspan x="20" y="57">Saving the Planet</tspan>
+        </text>
+        <text id="Our-SVGs-are-300kb" font-size="75" fill="#000000">
+            <tspan x="161" y="390">Our SVGs are 300kb</tspan>
+        </text>
+        <text id="An-equivalent-JPG-wo" font-size="75" fill="#000000">
+            <tspan x="161" y="390"></tspan>
+            <tspan x="161" y="477">An equivalent JPG would be 1.2MB</tspan>
+        </text>
+        <text id="Saving-3g-co2-per-de" font-size="75" fill="#000000">
+            <tspan x="161" y="390"></tspan>
+            <tspan x="161" y="477"></tspan>
+            <tspan x="161" y="564">Saving 3g co2 per design saved</tspan>
+        </text>
+    </g>
+</svg>

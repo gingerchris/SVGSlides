@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    body>svg {
+      position: fixed;
+      left: 0;
+      top: 0;
+      pointer-events: none;
+      overflow: hidden;
+      max-width: 100vw;
+      max-height: 100vh;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/service-worker.js", {
+        scope: '/'
+      });
+    }
+  </script>
+  <script src="/scripts/page.js"></script>
+  <?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1440 900" version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Slide-1.3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <text id="Title" font-family="DINAlternate-Bold, DIN Alternate" font-size="50" font-weight="bold" fill="#000000">
+            <tspan x="20" y="57">Unmade</tspan>
+        </text>
+        <foreignObject x="80.5" y="90.5" width="1279" height="719">
+            <video width="1279" height="719" autoplay muted>
+                <source src="/videos/unmade.mp4" type="video/mp4" />
+</video>
+</foreignObject>
+</g>
+</svg>
+</body>
+
+</html>

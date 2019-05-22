@@ -1,0 +1,35 @@
+<svg width="100%" height="100%" 
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" id="node">
+    <defs>
+        <text id="s" font-family="Bebas" font-size="35.7">
+            <tspan x="0" y="40">lesson</tspan>
+        </text>
+        <text id="a" font-family="Bebas" font-size="35.7">
+            <tspan x="0" y="40">learned</tspan>
+        </text>
+        <g id="ll">
+            <use class="s" href="#s" />
+            <use class="a" href="#a" x="114" />
+        </g>
+    </defs>
+    <g id="note" style="transform: translate(500px, 300px) rotate(-15deg) translate(-500px, -300px)">
+        <g id="t" transform="translate(2 0)">
+            <use href="#ll" />
+            <use href="#ll" x="250"/>
+            <use href="#ll" x="500"/>
+            <use href="#ll" x="750"/>
+        </g>
+        <g id="l" style="
+    transform-origin: 247.5px 23.75px;
+    transform: rotate(270deg) translate(-274.5px, -230px) 
+    ">
+            <use href="#ll" />
+            <use href="#ll" x="250"/>
+        </g>
+        <use href="#l" style="transform: rotate(180deg) translate(-998px, -598px)" />
+        <use href="#t" style="
+    transform-origin: 492.5px 23.75px;
+    transform: rotate(180deg) translate(-14px, -552.5px);" />
+    </g>
+
+</svg>

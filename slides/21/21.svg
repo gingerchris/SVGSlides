@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1440 900" version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Slide-2.1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="DINAlternate-Bold, DIN Alternate" font-weight="bold">
+        <text id="Vector-based" font-size="75" fill="#000000">
+            <tspan x="202" y="346">Vector based</tspan>
+        </text>
+        <text id="Support-from-existin" font-size="75" fill="#000000">
+            <tspan x="202" y="434">Support from existing software</tspan>
+        </text>
+        <text id="Easy-to-manipulate" font-size="75" fill="#000000">
+            <tspan x="202" y="520">Easy to manipulate</tspan>
+        </text>
+        <text id="Print-colour-support" font-size="75" fill="#000000">
+            <tspan x="202" y="607">Print colour support</tspan>
+        </text>
+        <text id="Why-SVG?" font-size="50" fill="#000000">
+            <tspan x="20" y="57">Why SVG?</tspan>
+        </text>
+    </g>
+</svg>

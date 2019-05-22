@@ -1,0 +1,84 @@
+@keyframes twentysixmotionLeft {
+  0% {
+    transform: translate(333px, 233px) rotate(0deg);
+  }
+
+  25% {
+    transform: translate(333px, 233px) rotate(90deg) scale(1);
+  }
+
+  50% {
+    transform: translate(333px, 233px) rotate(180deg) scale(2.5);
+  }
+
+  75% {
+    transform: translate(333px, 233px) rotate(270deg) scale(2);
+  }
+
+  100% {
+    transform: translate(333px, 233px) rotate(360deg);
+  }
+}
+
+@keyframes twentysixmotionRight {
+  0% {
+    transform: translate(368px, 233px) rotate(0deg);
+  }
+
+  25% {
+    transform: translate(368px, 233px) rotate(90deg) scale(1);
+  }
+
+  50% {
+    transform: translate(368px, 233px) rotate(180deg) scale(2.5);
+  }
+
+  75% {
+    transform: translate(368px, 233px) rotate(270deg) scale(2);
+  }
+
+  100% {
+    transform: translate(368px, 233px) rotate(360deg);
+  }
+}
+
+#twentysix-leftCircle,
+#twentysix-rightCircle {
+  transition: all 3s ease-in-out;
+  transform-origin: center center;
+}
+
+.step2 #twentysix-leftCircle,
+.step2 #twentysix-rightCircle {
+  r: 216px;
+}
+
+.step3 #twentysix-leftCircle {
+  transform: translate(333px, 233px);
+}
+
+.step3 #twentysix-rightCircle {
+  transform: translate(368px, 233px);
+}
+
+.step3 #twentysix-clipLeft use {
+}
+
+.step3 #twentysix-clipRight use {
+}
+
+.step4 #twentysix-leftClip {
+  clip-path: url("#twentysix-clipLeft");
+}
+
+.step4 #twentysix-rightClip {
+  clip-path: url("#twentysix-clipRight");
+}
+
+.step5 #twentysix-leftCircle {
+  animation: twentysixmotionLeft 3s infinite linear;
+}
+
+.step5 #twentysix-rightCircle {
+  animation: twentysixmotionRight 3s infinite linear;
+}

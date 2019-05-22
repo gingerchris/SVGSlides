@@ -1,0 +1,15 @@
+#code_patternWithTransform2 {
+  opacity: 0;
+}
+
+#fifteen-rect {
+  transition: transform 3s ease-in-out;
+}
+
+.step2 #code_patternWithTransform2 {
+  opacity: 1;
+}
+
+.step2 #fifteen-rect {
+  transform: translate(250px, 400px);
+}

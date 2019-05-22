@@ -1,0 +1,13 @@
+#thirtytwo-photo1,
+#thirtytwo-photo2 {
+  opacity: 0;
+  transition: alll 2s ease-in-out;
+}
+
+.step3 #thirtytwo-photo1 {
+  opacity: 1;
+}
+
+.step4 #thirtytwo-photo2 {
+  opacity: 1;
+}

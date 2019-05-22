@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1440 900" version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <pattern id="thirtyfour-pattern" width="98" height="98" viewBox="0 0 250 250" patternUnits="userSpaceOnUse">
+            <use id="thirtyfour-pattern-inner" href="../../logos/round.svg#logo" width="250" height="250" x="0" y="0" />
+        </pattern>
+
+        <polygon id="thirtyfour-path-5" points="691.122255 752.012397 699 787.116798 594.153447 810.766483 508.341406 830 493.153196 796.553605 492.434697 750.87666 490.47701 686.951839 487.3488 609.196946 486.190536 581.674628 484.359957 554.68603 483.340652 546.825841 479.679493 523.546692 474.63978 500.615585 469.461108 480.118728 463.900299 459.598968 458.084868 436.911204 452.616425 414.107291 448.538389 396.03405 444.923414 377.94854 444.356134 374.957668 441.564286 360.999585 439.107983 346.855825 437.300699 336.016216 445.491511 332.688754 452.581685 328.526972 458.710183 323.310021 463.43683 317.351181 467.491569 310.407107 470.990882 302.859379 473.944577 294.964836 476.250477 286.51367 477.895097 277.830204 478.775852 269.030997 478.996142 259.930371 478.996142 257.414734 477.744695 238.645409 475.346836 219.864633 471.778044 195.79697 469.495848 183.46213 466.866254 171.12688 464.027814 159.951089 461.038971 149.493876 455.999258 141.622236 449.511511 132.382557 435.562895 113.474179 421 94.5077252 611.855997 70 606.376111 82.3348406 603.375416 90.7749635 601.452469 97.4294792 600.502235 103.736362 600.328537 106.935813 602.008305 115.897386 604.464608 125.252806 608.380389 137.019573 613.304031 148.543407 619.073687 159.661531 625.932127 169.956379 632.743976 178.303254 640.390395 185.850165 647.399647 191.345222 654.791035 195.855046 659.818896 198.115888 665.194563 199.796387 671.75179 201.3272 678.401792 202.416723 684.750171 202.973345 691.122255 203.170064"></polygon>
+        <polygon id="thirtyfour-path-7" points="725.238364 202.973416 731.587143 202.416794 738.248579 201.32727 744.794352 199.796457 750.170011 198.115957 755.209308 195.855113 762.600686 191.345287 769.598484 185.850227 777.255927 178.303313 784.068174 169.956433 790.91516 159.66158 796.696252 148.543449 801.608034 137.01961 805.53607 125.252836 807.980109 115.897411 809.671727 106.935833 809.486585 103.735971 808.548205 97.4294939 806.613 90.7749747 803.624162 82.3348473 798.132431 70 989 94.5077383 974.437126 113.474202 960.48894 132.38259 954.000794 141.622274 948.961088 149.493919 945.972249 159.951138 943.12237 171.126935 940.503815 183.462191 938.221622 195.797038 934.653653 219.864714 932.243536 238.6455 930.992908 257.414835 930.992908 259.930473 931.224233 269.031104 932.104578 277.830316 933.750012 286.513787 936.055092 294.964957 939.0096 302.859504 942.50809 310.407237 946.563233 317.351314 951.289873 323.310158 957.41877 328.527111 964.497082 332.688895 972.687881 336.016359 970.8806 346.890738 968.436153 360.999742 965.644309 374.957832 965.064769 377.99492 961.450207 396.034225 957.372586 414.107476 951.915596 436.911402 946.099356 459.599178 940.538963 480.118949 935.360299 500.615817 930.320593 523.546936 926.647996 546.826097 925.640136 554.686291 923.80956 581.674904 922.650889 609.185376 919.523092 686.952171 917.553556 750.877026 916.84691 796.553996 901.647278 830 815.846399 810.766881 711 787.117184 718.86629 752.012764 718.86629 203.170136"></polygon>
+
+        <filter id="shadow">
+            <feDropShadow dx="4" dy="8" stdDeviation="4"/>
+        </filter>
+        <svg width="100%" height="100%" 
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" id="node" overflow="visible">
+            <defs>
+                <text id="s" font-family="Bebas" font-size="35.7">
+                    <tspan x="0" y="40">lesson</tspan>
+                </text>
+                <text id="a" font-family="Bebas" font-size="35.7">
+                    <tspan x="0" y="40">learned</tspan>
+                </text>
+                <g id="ll">
+                    <use class="s" href="#s" />
+                    <use class="a" href="#a" x="114" />
+                </g>
+            </defs>
+            <g style="transform: translate(500px, 300px) rotate(-15deg) translate(-500px, -300px); filter:url(#shadow);" id="note">
+                <rect width="100%" height="100%" fill="#0067B9" />
+                <g id="t" transform="translate(2 0)">
+                    <use href="#ll" />
+                    <use href="#ll" x="250"/>
+                    <use href="#ll" x="500"/>
+                    <use href="#ll" x="750"/>
+                </g>
+                <g id="l" style="
+    transform-origin: 247.5px 23.75px;
+    transform: rotate(270deg) translate(-274.5px, -230px) 
+    ">
+                    <use href="#ll" />
+                    <use href="#ll" x="250"/>
+                </g>
+                <use href="#l" style="transform: rotate(180deg) translate(-998px, -598px)" />
+                <use href="#t" style="
+    transform-origin: 492.5px 23.75px;
+    transform: rotate(180deg) translate(-14px, -552.5px);" />
+                <text id="The-most-obivious-so" font-family="Bebas" font-size="75" font-weight="normal" transform="translate(-210 -100)" text-anchor="middle">
+                    <tspan x="710" y="322">ONE SIZE</tspan>
+                    <tspan x="710" y="421">DOES NOT</tspan>
+                    <tspan x="710" y="520">FIT ALL</tspan>
+                </text>
+            </g>
+        </svg>
+    </defs>
+    <g id="thirtyfour-Slide-34" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="thirtyfour-left-logo" stroke="#979797" stroke-width="2" fill="none" x="505" y="392" width="186" height="138"></rect>
+        <rect id="thirtyfour-chest-logo" stroke="#979797" stroke-width="2" fill="url(#thirtyfour-pattern)" transform="translate(505 183)" x="0" y="0" width="98" height="98"></rect>
+        <rect id="thirtyfour-right-logo" stroke="#979797" stroke-width="2" x="718" y="392" width="186" height="138"></rect>
+        <mask id="thirtyfour-mask-6" fill="white">
+            <use xlink:href="#thirtyfour-path-5"></use>
+        </mask>
+        <use id="thirtyfour-Stroke-17" stroke="#000000" stroke-width="4" xlink:href="#thirtyfour-path-5"></use>
+        <mask id="thirtyfour-mask-8" fill="white">
+            <use xlink:href="#thirtyfour-path-7"></use>
+        </mask>
+        <use id="thirtyfour-Mask" stroke="#000000" stroke-width="4" xlink:href="#thirtyfour-path-7"></use>
+        <text id="thirtyfour-Logos" font-family="DINAlternate-Bold, DIN Alternate" font-size="50" font-weight="bold" fill="#000000">
+            <tspan x="20" y="57">Logos</tspan>
+        </text>
+        <g id="thirtyfour-x" transform="translate(377.000000, 110.000000)" stroke="#FF0000" stroke-linecap="square" stroke-width="28">
+            <path d="M-138.5,340 L818.991237,340" id="thirtyfour-Line-4" transform="translate(340.000000, 340.000000) rotate(45.000000) translate(-340.000000, -340.000000) "></path>
+            <path d="M-138.5,340 L818.991237,340" id="thirtyfour-Line-4" transform="translate(340.000000, 340.000000) rotate(135.000000) translate(-340.000000, -340.000000) "></path>
+        </g>
+    </g>
+    <use href="#node" x="225" y="100" width="1000" height="600" />
+</svg>
