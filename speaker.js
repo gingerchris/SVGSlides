@@ -3,6 +3,7 @@ const systemTimeContainer = document.querySelector("#systemTime span");
 const overallTimeContainer = document.querySelector("#overallTime span");
 const slideTimeContainer = document.querySelector("#slideTime span");
 const notesContainer = document.querySelector("#notes");
+const bulletsContainer = document.querySelector("#bullets");
 const slideCountContainer = document.querySelector("#slideCount");
 
 let currentSlide = -1;
@@ -98,6 +99,7 @@ const handlePostMessage = ({ source, data }) => {
     if (data.script) {
       if (data.start === true || !timer) start();
       notesContainer.innerHTML = "";
+      bulletsContainer.innerHTML = "";
       slideCountContainer.innerHTML = `Slide ${data.slide} of ${
         data.slides
       } | Click ${data.step} of ${data.steps - 1}`;
@@ -116,8 +118,24 @@ const handlePostMessage = ({ source, data }) => {
         }
         node.classList.add("line");
         notesContainer.appendChild(node);
-        resetSlideTime();
       });
+      data.bullets.forEach((line, index) => {
+        const node = document.createElement("li");
+        node.textContent = line;
+        node.innerHTML = node.innerHTML.replace(/(?:\r\n|\r|\n)/g, "<br>");
+        if (index === data.step) {
+          node.classList.add("active");
+        }
+        if (index === data.step - 1) {
+          node.classList.add("prev");
+        }
+        if (index === data.step + 1) {
+          node.classList.add("next");
+        }
+        node.classList.add("line");
+        bulletsContainer.appendChild(node);
+      });
+      resetSlideTime();
     }
   }
 };
@@ -130,6 +148,8 @@ const decrement = () => {
   opener.postMessage("decrement");
 };
 
+const toggleScript = () => document.body.classList.toggle("notes");
+
 window.addEventListener("load", setup);
 window.addEventListener("message", handlePostMessage);
 document.addEventListener("keydown", event => {
@@ -140,5 +160,8 @@ document.addEventListener("keydown", event => {
     case "ArrowLeft":
     case "PageUp":
       return decrement();
+    case "ArrowDown":
+    case "b":
+      return toggleScript();
   }
 });

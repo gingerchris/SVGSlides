@@ -1,5 +1,5 @@
 const iframe = document.querySelector("iframe");
-const withSpeakerNotes = true;
+const withSpeakerNotes = false;
 let step;
 let slides;
 let slideKeys;
@@ -8,10 +8,12 @@ let notesWindow;
 
 const updateScript = (script, step, hash) => {
   if (withSpeakerNotes) {
+    const { steps, bullets } = slides[getHash()];
     notesWindow.postMessage({
       script,
       step,
-      steps: slides[getHash()].steps,
+      steps,
+      bullets,
       slide: slideKeys.indexOf(hash),
       slides: slideKeys.length - 1,
       start: script === slides[10].script
@@ -100,4 +102,12 @@ window.addEventListener("message", ({ source, data }) => {
 
 if (!withSpeakerNotes) {
   window.addEventListener("click", increment);
+  window.addEventListener("keydown", e => {
+    switch (e.key) {
+      case "ArrowRight":
+        return increment();
+      case "ArrowLeft":
+        return decrement();
+    }
+  });
 }
