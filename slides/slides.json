@@ -7,7 +7,7 @@
   "12": {
     "steps": 0,
     "script": [
-      "At Unmade, we help fashion brands produce customised garments using the same manufacturing processes as their mass-produced ranges. I've been there for around three years.  When I started, we were focussed entirely on knitwear and developing the software required to automate industrial knitting machines."
+      "At Unmade, we help fashion brands produce customised garments using the same manufacturing processes as their mass-produced ranges. I've been there for just over three years.  When I started, we were focussed entirely on knitwear and developing the software required to automate industrial knitting machines."
     ],
     "bullets": [
       "At unmade, help fashion brands customise using same process as mass \n\n three years \n\ndeveloping the software required to automate industrial knitting machines"
@@ -349,13 +349,10 @@
   "410": {
     "steps": 2,
     "script": [
-      "With 15,000 saved designs, we've saved the equivalent of one person driving from Guildford to Leicester.",
-      "In fact, since I wrote this we've reached 85k designs, so if anyone needs to head back to Leicester tonight, feel free to fly home, your conscience is clear thanks to Unmade.\n\n Oh but also"
+      "With 35,000 saved designs, we've saved the equivalent of one person driving from London to Edinburgh.",
+      "So if anyone fancies a jaunt to Scotland by car, Unmade have already offset your carbon. \n\n Oh but also"
     ],
-    "bullets": [
-      "15k saves = driving to leicester",
-      "85k designs = flying.  OH ALSO"
-    ]
+    "bullets": ["35k saves = driving to Edinburgh", "OH ALSO"]
   },
   "420": {
     "steps": 4,
@@ -373,14 +370,13 @@
     ]
   },
   "425": {
-    "steps": 2,
+    "steps": 1,
     "script": [
-      "Unmade's platform automates away the expensive parts of manufacturing, all but eliminating this waste \n\n If we approached brands with an offer to replace their entire supply chain with on-demand manufacturing we'd be turned away at the door \n\n but under the guise of customisation, we've snuck in the back door and implemented on-demand manufacturing with our partners and their factories. \n\nSo cycling teams can get their custom team kit, but Rapha designers can also now get a new design to market in a matter of weeks, not a year.",
-      "In fact, on Tuesday Rapha released the first in a new range of artist collaborations; short-run kits designed using our system.  Currently in their Soho store you can pick up a kit designed in collaboration with architect and artist Nigel Peake. \n\n And if it's popular enough that a short-run does sell out, they can quickly produce a second run, or even release a second design without having to pay any more setup costs.\n\nThere's no longer need for them to hold massive stock or guess what people will want a year from now.\n\nReducing manufacturing by 15% is reducing the pollution created by manufacturing by 15% and that's"
+      "Unmade's platform automates away the expensive parts of manufacturing, all but eliminating this waste \n\n If we approached brands with an offer to replace their entire supply chain with on-demand manufacturing we'd be turned away at the door \n\n but under the guise of customisation, we've snuck in the back door and implemented on-demand manufacturing with our partners and their factories. \n\nSo cycling teams can get their custom team kit, but Rapha designers can also now get a new design to market in a matter of weeks, not a year. \n\n We're currently looking at expanding the scope of the project to enable Rapha to produce all their kit using our on-demand manufacturing system.\n\n This would mean they can do away with mass production, only manufacturing a short-run of each design, then making more if demand dictates.  So theres no longer need for them to hold massive stock or guess what people will want a year from now.\n\nReducing manufacturing by 15% is reducing the pollution created by manufacturing by 15% and that's"
     ],
     "bullets": [
       "unmade automates away expensive.  snuck in there",
-      "nigel peake, restock, no need for stock or predictions"
+      "produce all designs through the system"
     ]
   },
   "430": {
