@@ -131,7 +131,10 @@ const resetGroup = group => {
 const getRandomGroup = () => {
   const group = groups[Math.floor(Math.random() * groups.length)];
   if (group.stock > 0) return group;
-  return getRandomGroup();
+  if (groups.some(group => group.stock)) {
+    return getRandomGroup();
+  }
+  return -1;
 };
 
 const addCustomer = customer => {
@@ -154,6 +157,7 @@ const showCustomer = customer => {
 
 const sellShirt = customer => {
   const group = getRandomGroup();
+  if (group === -1) return false;
   const shirt = group.shirts[group.stock - 1];
   group.stock -= 1;
   TweenMax.to(shirt, 0.5, {
