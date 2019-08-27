@@ -24,11 +24,11 @@
   animation-delay: 0.5s;
 }
 
-#note {
+#use-note {
   opacity: 0;
 }
 
-.step7 #note {
+.step7 #use-note {
   opacity: 1;
 }
 
