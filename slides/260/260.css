@@ -82,3 +82,12 @@
 .step5 #twentysix-rightCircle {
   animation: twentysixmotionRight 3s infinite linear;
 }
+
+#twentysix-myspace {
+  transform: translateY(1000px);
+  transition: transform 3s ease-in-out;
+}
+
+.step6 #twentysix-myspace {
+  transform: translateY(600px);
+}

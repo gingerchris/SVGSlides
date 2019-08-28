@@ -53,7 +53,7 @@
   "21": {
     "steps": 0,
     "script": [
-      "SVG is vector based, it's what the V stands for.  This means that our output file can be printed in super high-resolution but keep a small filesize, small enough to run on devices without loads of memory to spare.\n\nSVG support is baked in to existing software like Illustrator and Corel Draw.  The blank layplans we take as an input can therefore be drawn by the draftsmen in the factory - the experts in this field, without any additional training on how to write SVG code\n\nSVG is very widely supported by browsers, and methods to manipulate SVG, changing attributes or creating and removing elements are readily available to javascript without any additional libraries.\n\nSVG supports CMYK and RGB colour spaces.  Often, when you print something from the internet you'll find that the colours are not the same on paper as they were on screen.  This is because screens create and mix colours using red, green and blue light, as opposed to printers which use cyan, magenta, yellow and black ink.  Generally digital graphics define only how the colours should appear on screen, but with SVG you can also provide the colour information for a printed output.   So we can ensure that the colours on the finished, real-life garment look the same as they did on screen during the designing.\n\nIn fact, I've developed such an attachment to SVG that I've written all these slides as SVGs.  I'm a bit of a nerd for them.  Anyway:"
+      "SVG is vector based, it's what the V stands for.  This means that our output file can be printed in super high-resolution but keep a small filesize, small enough to run on devices without loads of memory to spare.\n\nSVG support is baked in to existing software like Illustrator and Corel Draw.  The blank layplans we take as an input can therefore be drawn by the draftsmen in the factory - the experts in this field, without any additional training on how to write SVG code\n\nSVG is very widely supported by browsers, and methods to manipulate SVG, changing attributes or creating and removing elements are readily available to javascript without any additional libraries.\n\nSVG supports CMYK and RGB colour spaces.  This means we can present graphics to the user on screen with RGB colours, then swap them out for CMYK colours before we print.  As long as we use accurate colour data, the finished, printed item will look the same as they did on screen.  This means we can print using Pantone colours, for which printed references already exist, so kit designers can get really accurate with their colours."
     ],
     "bullets": ["on screen, mention slides"]
   },
@@ -149,7 +149,7 @@
   "110": {
     "steps": 0,
     "script": [
-      "Secondly - in fashion, and wallpapering, there is this concept of pattern matching.\n\nSome of our panels are attached in such a way that we want the patterns to flow seamlessly across the, er, seams.\n\nWe need to be able to define a point on each panel that the pattern should be anchored to, and translated around.\n\nWe even have markers in our blank layplans that show us where the centre of a panel should be and how it's rotated on the document.\n\nSo we need to somehow be able to transform our pattern element.  We turned to the developers best friend"
+      "Secondly - in fashion, much like when you're wallpapering, there is this concept of pattern matching.\n\nSome of our panels are attached in such a way that we want the patterns to flow seamlessly across the, er, seams.\n\nWe need to be able to define a point on each panel that the pattern should be anchored to, and translated around.\n\nWe even have markers in our blank layplans that show us where the centre of a panel should be and how it's rotated on the document.\n\nSo we need to somehow be able to transform our pattern element.  We turned to the developers best friend"
     ],
     "bullets": [
       "pattern matching - pattern must be seamless. \n\nneed to transform, so we turn to"
@@ -158,7 +158,7 @@
   "120": {
     "steps": 0,
     "script": [
-      "And Google provides - the patternTransform attribute, which allows you to define any set of transformations to apply to your pattern"
+      "And found the patternTransform attribute, which allows you to define any set of transformations to apply to your pattern"
     ],
     "bullets": ["google provides patternTransform: intro that"]
   },
@@ -172,7 +172,7 @@
   "140": {
     "steps": 2,
     "script": [
-      "So we had a crack at duplicating the patterns, one per panel, and applying transformations like that.\n\nBut then when the user starts to scale or rotate that pattern, we had to run some more calculations to determine the new transform value and it started to get a bit out of hand. The code became hard to read, and harder to maintain",
+      "So we had a crack at duplicating the patterns, one per panel, and applying transformations like that.\n\nBut this was very repetitive, and when the user starts to scale or rotate that pattern, we had to run some more calculations to determine how the user's choices affect the existing transform value and it started to get a bit out of hand. The code became hard to read, and harder to maintain",
       "It was not sustainable code, so we decided to look for a simpler path."
     ],
     "bullets": [
@@ -184,7 +184,7 @@
     "steps": 2,
     "script": [
       "We stumbled across the fact that when you move an SVG element by applying a transform, rather than changing it's x and y position",
-      "it retains the fill from its original position. As far as I'm concerned, stumbling is a very underrated developer skill."
+      "it retains the fill from its original position. \n\n Does anyone else feel like stumbling across stuff has played a huge part in getting you to this stage of your career?  Or is that just me?"
     ],
     "bullets": [
       "applying transform not x/y",
@@ -194,7 +194,7 @@
   "190": {
     "steps": 4,
     "script": [
-      "So we figured we could",
+      "SVG's co-ordinate system allows you to draw stuff that's outside of the visible area or viewbox.  In this example only the bottom right quarter would be within the viewbox, but I'm showing more for illustrative purposes.  So we figured we could",
       "draw some simple rectangles big enough to cover our panels, but centred at the document origin - anchoring the pattern to the centre of the rectangles",
       "Then we move them into place with a transformation, keeping the pattern locked at the centre",
       "And finally hide anything outside our panel using a clipping path"
@@ -210,12 +210,12 @@
     "steps": 7,
     "script": [
       "This is cool, until the user starts to add their own transformation, at which point our rectangle is no longer the right size, and we're left with blank areas inside our panel.",
-      "Dealing with this took a bit of number crunching.  I swore at my fifteen year old self for not remembering GCSE trigonometry and relearned enough to determine how to scale each rectangle to cover the panel when rotation is applied.",
-      "We built this as a prototype to present to the wider company.  This was a pretty big concept shift and I always feel more confident if I can get as many people as possible to tell me my idea is not ridiculous. \n\nAfter this presentation, I was feeling pretty smug until",
-      " Martin, one of our product managers asked if:  instead of using scaling rectangles, couldn't we just use circles?",
-      "This is when SVG circles bumped doughnuts off the top spot of my list of favourite round things.",
-      "Circles made everything so much easier.  I love circles.",
-      "Seeking cross-functional feedback had provided us with a much simpler solution.  Team members who didn't have the same background knowledge I had picked up, from hacking away at this problem, were able to approach it from a completely different angle"
+      "Dealing with this took a bit of number crunching.  I thought back to GCSE trigonometry and remembered thinking \"I'll never need this in real life\" (Damn). So I relearned enough to determine how to scale each rectangle to cover the panel when rotation is applied.",
+      "We built this as a prototype to present to the wider company.  I was proposing a pretty big change in how we apply patterns, and I feel much more confident in making big changes if I've got everyone else on board before hand.  That way we all share the blame if it doesn't work. \n\n But this does work, so after this presentation, I was feeling pretty smug until",
+      "Martin, one of our product managers asked if:  instead of using scaling rectangles, couldn't we just use circles?",
+      "SVG Circles were a revelation.",
+      "And made handling user transformations far easier",
+      "Seeking feedback had provided us with a much simpler solution.  Hacking away at this problem in isolation had narrowed my focus down this one path.  Sharing the problem with the fresh eyes and minds of other team members resulted in a completely different approach."
     ],
     "bullets": [
       "cool until user transformations",
@@ -228,10 +228,11 @@
     ]
   },
   "250": {
-    "steps": 2,
+    "steps": 3,
     "script": [
-      "With rectangles, your shape's origin is the top left.  If you want the centre point, which we do, you need to calculate that.",
-      "With circles, the centre of the shape is the origin, and you define it when writing the code. We were doing all this maths to scale our rectangles but with circles we never need to scale. We were able to massively simplify the process and therefore the code."
+      "With rectangles, your shape's origin is the top left.  If you want the centre point, which we do,",
+      "you need to calculate that.",
+      "With circles, the centre of the shape is the origin, and you define it when writing the code. We were doing all this maths to translate and scale our rectangles but with circles we never need to transform. We were able to massively simplify the process and therefore the code. \n\n  This was when I realised the SVG circle element was my new favourite circular thing."
     ],
     "bullets": [
       "rectangles origin top, calculate center",
@@ -239,13 +240,14 @@
     ]
   },
   "260": {
-    "steps": 5,
+    "steps": 6,
     "script": [
       "So our final process for applying patterns is:",
       "Draw a circle for each panel at 0, 0, sized to cover the entirity of the panel",
-      "transform them into place",
+      "transform them into place, keeping the pattern locked to the centre",
       "apply the clip path",
-      "then any user transforms can be applied directly to the circle - no trigonometry required.  15 year old Chris is vindicated"
+      "then any user transforms can be applied directly to the circle - no trigonometry required.  15 year old Chris is vindicated.  On the maths thing at least.",
+      "Not on some of the other questionable decisions I made in my youth"
     ],
     "bullets": [
       "so now we",
@@ -268,7 +270,7 @@
       "Again, these placements can be rotated and, even more so with logos,",
       "pattern matching is crucial.  Getting it wrong could",
       "be",
-      "embarrassing"
+      "embarrassing - I created this cycling team purely for this joke"
     ],
     "bullets": [
       "also user transformable",
@@ -297,22 +299,23 @@
   "350": {
     "steps": 0,
     "script": [
-      "We took a step back and came up with a solution using the <use> element."
+      "We took a step back and came up with a solution using the <use> tag."
     ],
     "bullets": ["on screen"]
   },
   "360": {
-    "steps": 2,
+    "steps": 3,
     "script": [
-      "SVGs <use> element allows you to clone an element from one place in your document to another.",
-      "And importantly you can apply transformations to <use> elements, so each clone can be sized and positioned differently to the original element. This allows us to import a logo SVG whole to a hidden part of our document, and clone it into it in as many different placements as the user wants."
+      "SVGs <use> tag allows you to clone an element from one place in your document to another.",
+      "And importantly you can change the width and height, and apply transformations to cloned elements, so each clone can be sized and positioned differently to the original element.",
+      "Our solution involved us inserting a use tag for each possible placement, positioned, sized and rotated to cover that placement. \n\n  Then when a user uploads their logo SVG, we copy the entire file to a hidden part of our document and update the href of the relevant use tag to point to the uploaded file, cloning the logo into place."
     ],
     "bullets": ["intro use", "supports transforms"]
   },
   "370": {
     "steps": 0,
     "script": [
-      "Regardless of the size at which the logo was drawn, we're able to make it fit perfectly into any of our placements by manipulating just three attributes on the SVG. We set the width and height to 100% - this tells the SVG to fill whatever box it's put inside - in this case that's the width and height we set on our use element. We set the original width and height to the viewbox attribute, and this ensures that whatever size we try to draw it at, it will retain it's original aspect ratio"
+      "Regardless of the size at which the logo was drawn, we're able to make it fit perfectly into any of our placements by manipulating just three attributes on the uploaded SVG. \n\n We set the width and height to 100% - this tells the SVG to fill whatever box it's put inside - in this case that's the width and height we set on our use tag. We set the original width and height to the viewbox attribute, and this ensures that whatever size we try to draw it at, it will retain it's original aspect ratio.  \n\n Obviously we dont JUST change those three attributes, we also filter out any unwanted content so don't go getting any ideas about injecting a malicious script into your cycling jersey."
     ],
     "bullets": ["on screen"]
   },
@@ -326,8 +329,8 @@
   "385": {
     "steps": 2,
     "script": [
-      "Use elements also make it really easy for us to pattern match logos",
-      "as long as we draw the <use> element so that it's centre is at the point defined in our layplan, the rest comes free."
+      "Use tags also make it really easy for us to pattern match logos",
+      "as long as we draw the <use> tag so that it's centre is at the point defined in our layplan, the rest comes free."
     ],
     "bullets": ["use easy for pattern match", "just draw to center"]
   },
@@ -360,7 +363,7 @@
       "Traditionally, the process from designing a garment to getting it produced is hard and expensive.  Most of that cost doesn't come from the manufacturing or the materials but from the setup.  So once you've set the machines up, it makes economical sense to make a thousand items rather than a handful.",
       "Making a thousand items takes time, which means longer wait times to get your next stuff made, which in turn leads to waste. Current production is based on designers predicting what you'll want to wear 12 months in advance, because that's how long it takes to get stuff made. These predictions are always wrong.",
       "15% of everything that gets made is left unsold, a huge amount of that is destroyed.",
-      "that adds up to $400bn worth of stuff [PAUSE].  To put that into perspective. that's approximately 51 dollars for every single person on the planet.  400 billion dollars worth of manufactured items, wasted.  This is a huge number, and the environmental impact of this is disasterous."
+      "15% doesn't sound like much, but that adds up to $400bn worth of stuff [PAUSE].  To put that into perspective. that's approximately 51 dollars for every single person on the planet.  400 billion dollars worth of manufactured items, wasted.  This is a huge number, and the environmental impact of this is disasterous."
     ],
     "bullets": [
       "traditionally, manuf is hard, expensive, not cos of materials but setup - make a thousand",
@@ -372,7 +375,7 @@
   "425": {
     "steps": 1,
     "script": [
-      "Unmade's platform automates away the expensive parts of manufacturing, all but eliminating this waste \n\n If we approached brands with an offer to replace their entire supply chain with on-demand manufacturing we'd be turned away at the door \n\n but under the guise of customisation, we've snuck in the back door and implemented on-demand manufacturing with our partners and their factories. \n\nSo cycling teams can get their custom team kit, but Rapha designers can also now get a new design to market in a matter of weeks, not a year. \n\n We're currently looking at expanding the scope of the project to enable Rapha to produce all their kit using our on-demand manufacturing system.\n\n This would mean they can do away with mass production, only manufacturing a short-run of each design, then making more if demand dictates.  So theres no longer need for them to hold massive stock or guess what people will want a year from now.\n\nReducing manufacturing by 15% is reducing the pollution created by manufacturing by 15% and that's"
+      "Unmade's platform automates away the expensive parts of manufacturing, all but eliminating this waste \n\n If we approached brands with an offer to replace their entire supply chain with on-demand manufacturing we'd be turned away at the door \n\n but under the guise of customisation, we've snuck in the back door and implemented on-demand manufacturing with our partners and their factories, proving to them that it's a viable replacement for mass production. \n\nSo cycling teams can get their custom team kit, but Rapha designers can also now get a new design to market in a matter of weeks, not a year. \n\n We're currently looking at expanding the scope of the project to enable Rapha to produce all their kit using our on-demand manufacturing system.\n\n This would mean they can do away with mass production, only manufacturing a short-run of each design, then making more if demand dictates.  So theres no longer need for them to hold massive stock or guess what people will want a year from now.\n\nReducing manufacturing by 15% is reducing the pollution created by manufacturing by 15% and that's"
     ],
     "bullets": [
       "unmade automates away expensive.  snuck in there",

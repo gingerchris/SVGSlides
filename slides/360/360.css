@@ -18,3 +18,11 @@
 .step2 #thirtysix-logo-three {
   opacity: 1;
 }
+
+#thirtysix-placements {
+  display: none;
+}
+
+.step3 #thirtysix-placements {
+  display: initial;
+}

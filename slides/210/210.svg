@@ -41,13 +41,10 @@
     transform-origin: 492.5px 23.75px;
     transform: rotate(180deg) translate(-14px, -552.5px);" />
 				<text id="The-most-obivious-so" font-family="Bebas" font-size="75" font-weight="normal" transform="translate(-210 -100)">
-					<tspan x="350" y="322">
-						SEEK CROSS FUNCTIONAL
+					<tspan x="500" y="375">
+						SEEK FEEDBACK
 					</tspan>
-					<tspan x="550" y="421">
-						FEEDBACK
-					</tspan>
-					<tspan x="450" y="520">
+					<tspan x="490" y="490">
 						EARLY AND OFTEN
 					</tspan>
 				</text>
