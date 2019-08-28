@@ -62,7 +62,9 @@ const init = async () => {
 };
 
 const goToSlide = key => {
-  window.location.hash = `#${key}`;
+  if (!isNaN(key)) {
+    window.location.hash = `#${key}`;
+  }
 };
 
 init();

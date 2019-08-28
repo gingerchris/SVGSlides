@@ -51,31 +51,6 @@ const start = () => {
   timer = setInterval(updateTimers, 1000);
 };
 
-const nextSlide = () => {
-  if (currentSlide === -1) {
-    start();
-  }
-  currentSlide += 1;
-  const { notes: text } = slides[currentSlide];
-  notes.textContent = text;
-  notes.textContent = notes.innerHTML;
-
-  post("nextSlide");
-  resetSlideTime();
-};
-
-const prevSlide = () => {
-  post("prevSlide");
-  resetSlideTime();
-  if (currentSlide > -1) {
-    currentSlide -= 1;
-  }
-
-  if (currentSlide === -1) {
-    resetOverallTime();
-  }
-};
-
 const updateTimers = () => {
   overallTime += 1;
   slideTime += 1;
