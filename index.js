@@ -16,7 +16,7 @@ const updateScript = (script, step, hash) => {
       bullets,
       slide: slideKeys.indexOf(hash),
       slides: slideKeys.length - 1,
-      start: script === slides[10].script
+      start: script === slides[10].script || getHash() === 12
     });
   }
 };
