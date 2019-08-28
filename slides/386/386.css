@@ -1,0 +1,47 @@
+#slide1_386 {
+  transform: translate(100px, 81px);
+}
+
+#slide2_386 {
+  transform: translate(840px, 81px);
+  transition-delay: 0.3s;
+}
+
+#slide3_386 {
+  transform: translate(100px, 272px);
+  transition-delay: 0.6s;
+}
+
+#slide4_386 {
+  transform: translate(840px, 272px);
+  transition-delay: 0.9s;
+}
+
+#slide5_386 {
+  transform: translate(100px, 415px);
+  transition-delay: 1.2s;
+}
+
+#slide6_386 {
+  transform: translate(840px, 415px);
+  transition-delay: 1.5s;
+}
+
+#slide7_386 {
+  transform: translate(100px, 559px);
+  transition-delay: 1.8s;
+}
+
+#slide8_386 {
+  transform: translate(840px, 559px);
+  transition-delay: 2.1s;
+}
+
+.slideprev {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.step2 .slideprev {
+  opacity: 1;
+}

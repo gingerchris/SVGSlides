@@ -1,0 +1,56 @@
+@keyframes shirt {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(1070px);
+  }
+}
+
+.step2 .shirt_388 {
+  animation: shirt 2s infinite linear;
+}
+
+.step4 .shirt_388 {
+  animation: none;
+}
+
+#shirt_2 {
+  animation-delay: 0.4s;
+}
+#shirt_3 {
+  animation-delay: 0.8s;
+}
+#shirt_4 {
+  animation-delay: 1.2s;
+}
+#shirt_5 {
+  animation-delay: 1.6s;
+}
+#shirt_6 {
+  animation-delay: 2s;
+}
+
+#flamer {
+  opacity: 0;
+}
+
+.step3 #flamer {
+  opacity: 1;
+}
+
+.news {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.step4 .news {
+  opacity: 1;
+}
+
+#image2_389 {
+  transition-delay: 1s;
+}
+#image3_389 {
+  transition-delay: 2s;
+}

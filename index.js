@@ -1,5 +1,5 @@
 const iframe = document.querySelector("iframe");
-const withSpeakerNotes = false;
+const withSpeakerNotes = true;
 let step;
 let slides;
 let slideKeys;

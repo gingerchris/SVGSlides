@@ -334,65 +334,49 @@
     ],
     "bullets": ["use easy for pattern match", "just draw to center"]
   },
-  "390": {
+  "386": {
     "steps": 2,
     "script": [
-      "So, ",
-      "I've talked about how we chose SVG and how we overcame some of the biggest hurdles using <pattern> and <use> elements.  But how does this have anything to do with sustainability or saving the planet?"
-    ],
-    "bullets": ["on", "screen"]
-  },
-  "400": {
-    "steps": 0,
-    "script": [
-      "Well, SVG files are small - our layplan SVGs average at around 300kb, an equivalent JPG comes out at around 1.2mb.\n\nTransferring and storing data uses electricity.  By sticking to smaller files we're reducing our CO2 output by about 3g per design. That's the equivalent of driving a car 12 metres."
-    ],
-    "bullets": ["on screen, 12m drive"]
-  },
-  "410": {
-    "steps": 2,
-    "script": [
-      "With 35,000 saved designs, we've saved the equivalent of one person driving from London to Edinburgh.",
-      "So if anyone fancies a jaunt to Scotland by car, Unmade have already offset your carbon. \n\n Oh but also"
-    ],
-    "bullets": ["35k saves = driving to Edinburgh", "OH ALSO"]
-  },
-  "420": {
-    "steps": 4,
-    "script": [
-      "Traditionally, the process from designing a garment to getting it produced is hard and expensive.  Most of that cost doesn't come from the manufacturing or the materials but from the setup.  So once you've set the machines up, it makes economical sense to make a thousand items rather than a handful.",
-      "Making a thousand items takes time, which means longer wait times to get your next stuff made, which in turn leads to waste. Current production is based on designers predicting what you'll want to wear 12 months in advance, because that's how long it takes to get stuff made. These predictions are always wrong.",
-      "15% of everything that gets made is left unsold, a huge amount of that is destroyed.",
-      "15% doesn't sound like much, but that adds up to $400bn worth of stuff [PAUSE].  To put that into perspective. that's approximately 51 dollars for every single person on the planet.  400 billion dollars worth of manufactured items, wasted.  This is a huge number, and the environmental impact of this is disasterous."
-    ],
-    "bullets": [
-      "traditionally, manuf is hard, expensive, not cos of materials but setup - make a thousand",
-      "which takes time, means wait time, means waste because predictions",
-      "15% left unsold",
-      "400bn - $51 per person.  Disasterous"
+      "This is just one example of something cool that we’ve accomplished with SVG.\n\nA lot of people I’ve spoken to have only considered it for icons, or basic shape drawing but there’s actually loads of cool stuff it can do. \n\nI’ve used it for tiny UI details like this animated tick box,",
+      "but I’ve also used it to prepare this talk - all these slides are SVGs and I’ve found it far easier to get across SVG concepts using actual SVGs than trying to use something like keynote."
     ]
   },
-  "425": {
-    "steps": 1,
+  "387": {
+    "steps": 0,
     "script": [
-      "Unmade's platform automates away the expensive parts of manufacturing, all but eliminating this waste \n\n If we approached brands with an offer to replace their entire supply chain with on-demand manufacturing we'd be turned away at the door \n\n but under the guise of customisation, we've snuck in the back door and implemented on-demand manufacturing with our partners and their factories, proving to them that it's a viable replacement for mass production. \n\nSo cycling teams can get their custom team kit, but Rapha designers can also now get a new design to market in a matter of weeks, not a year. \n\n We're currently looking at expanding the scope of the project to enable Rapha to produce all their kit using our on-demand manufacturing system.\n\n This would mean they can do away with mass production, only manufacturing a short-run of each design, then making more if demand dictates.  So theres no longer need for them to hold massive stock or guess what people will want a year from now.\n\nReducing manufacturing by 15% is reducing the pollution created by manufacturing by 15% and that's"
-    ],
-    "bullets": [
-      "unmade automates away expensive.  snuck in there",
-      "produce all designs through the system"
+      "It’s not even limited to just vector graphics, using SVG filters you can apply all kinds of cool effects to any kind of content - I don’t know if you all saw this codepen by Kyle Wetton floating around this week, but it’s a great example of how SVG can be combined with CSS to produce a really powerful output"
+    ]
+  },
+  "388": {
+    "steps": 4,
+    "script": [
+      "There are so many great resources online that I found helpful when trying to solve some of these problems.  ",
+      "There’s a great talk by Sarah Drasner from a couple of years ago called ‘SVG can do that?’ where she basically lists loads of amazing things that you would never think you could achieve with SVG.",
+      "The MDN docs are really well written and have some great examples.",
+      " I struggled to get my head around things like viewBox and preserveAspectRatio until I read this article by Sara Souiedan.  I found her examples really helped me understand, and now we rely on those concepts for a lot of our logo work."
+    ]
+  },
+  "389": {
+    "steps": 4,
+    "script": [
+      "So how are we saving the planet?  Well traditionally making clothes is hard and expensive.,",
+      "The expense involved means you need to make thousands of an item to make it cost-effective.  Manufacturing to maximise return is a guessing game, what if thousands of people don’t want to buy what you’ve produced?",
+      "Currently, 15% of all manufactured clothes, $400bn worth per year is left unsold.  Much of it is sent to landfill or burnt.",
+      "And the public are starting to take notice."
+    ]
+  },
+  "391": {
+    "steps": 3,
+    "script": [
+      "Using manufacturing on-demand, there’s no longer any need to make thousands of items up front.  The fact SVGs are immediately printable means the set up time and cost, that you have to pay for every variation of your product, is drastically reduced.",
+      "After putting in the work to get your garment set up the first time,",
+      "you can create any number of styles without any extra effort or costs.  We don’t need to make thousands of garments that won’t be sold, we can make stuff quickly AFTER it’s been sold.  There’s no need for waste."
     ]
   },
   "430": {
-    "steps": 3,
+    "steps": 0,
     "script": [
-      "how we're doing our bit",
-      "to save the planet.",
-      "Thank you for your time.  I'll tweet out a link to these slides later if anyones interested to see them again or see if I was lying about them being SVGs.  Does anyone have any questions they'd like to ask?\n\nHiring"
-    ],
-    "bullets": [
-      "how we",
-      "save",
-      "thank you \n\n tweet for proof \n\n hiring/chat/questions"
+      "One of the reasons I was drawn to this job at was because I thought it was cool that we were writing code but producing physical items. \n\nSince then I’ve learned a lot about how polluting and wasteful the fashion and textile industries can be, and we’ve all learned a lot more about the impending climate crisis.  \n\nIt’s changed my personal values and now I’m really proud of the fact that we’re trying to make a difference. \n\nIt’s all our responsibility to leave this planet in a better state, and I believe that as developers, some of the power lies in our hands to push industries to be better.  \n\nI know that sounds a bit lofty and idealistic but, as you’ve just seen, you can literally use SVG to help try and save the planet, a little bit at a time.  I’m sure there are loads of other ways SVGs can be used for good, if you’ve got any ideas please do come and find me later, I’d love to chat them over with you.  Thank you very much for listening."
     ]
   }
 }

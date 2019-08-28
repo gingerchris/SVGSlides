@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    body>svg {
+      position: fixed;
+      left: 0;
+      top: 0;
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+  <link href="388.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/service-worker.js", {
+        scope: '/'
+      });
+    }
+  </script>
+  <script src="/scripts/page.js"></script>
+  <?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1440 900" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<g id="Slide-386" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 0.000000)" font-family="DINAlternate-Bold, DIN Alternate" font-size="100" font-weight="bold">
+		<text id="Logos" font-family="DINAlternate-Bold, DIN Alternate" font-size="50" font-weight="bold" fill="#000000">
+			<tspan x="20" y="57">
+				SVG Resources
+			</tspan>
+		</text>
+		<a href="https://www.youtube.com/watch?v=ADXX4fmWHbo" target="_blank">
+			<image id="one_388" href="/common/sarah.png" x="352" y="36" width="736" height="414" />
+		</a>
+		<a href="https://developer.mozilla.org/en-US/docs/Web/SVG" target="_blank">
+			<image id="two_388" href="/common/mdn.png" x="179" y="487" width="502" height="367" />
+		</a>
+		<a href="https://www.sarasoueidan.com/blog/svg-coordinate-systems/" target="_blank">
+			<image id="three_388" href="/common/sara.png" x="752" y="487" width="501" height="367" />
+		</a>
+	</g>
+</svg>
+
+</body>
+
+</html>

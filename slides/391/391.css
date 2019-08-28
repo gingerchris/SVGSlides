@@ -1,0 +1,63 @@
+.step2 #cashdepth {
+  transform: scaleY(0.6);
+}
+.step2 #cashband {
+  height: 33px;
+}
+
+#cashdepth {
+  transition: transform 0.3s ease-in;
+}
+
+#cashband {
+  transition: height 0.3s ease-in;
+}
+
+@keyframes shirt {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(1070px);
+  }
+}
+
+.step2 .shirt_388 {
+  animation: shirt 2s infinite linear;
+}
+
+.step4 .shirt_388 {
+  animation: none;
+}
+
+#shirt_2 {
+  animation-delay: 0.4s;
+}
+#shirt_3 {
+  animation-delay: 0.8s;
+}
+#shirt_4 {
+  animation-delay: 1.2s;
+}
+#shirt_5 {
+  animation-delay: 1.6s;
+}
+#shirt_6 {
+  animation-delay: 2s;
+}
+
+.step3 #shirt_2 {
+  fill: #0067b9;
+}
+.step3 #shirt_3 {
+  fill: #6c6864;
+}
+.step3 #shirt_4 {
+  fill: #7998ab;
+}
+.step3 #shirt_5 {
+  fill: #0094c6;
+}
+.step3 #shirt_6 {
+  fill: #4b4f55;
+}

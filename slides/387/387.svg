@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1440 900" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<g id="Slide-386" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 0.000000)" font-family="DINAlternate-Bold, DIN Alternate" font-size="100" font-weight="bold">
+		<a href="https://codepen.io/kylewetton/pen/OJLmJoV" target="_blank">
+			<text id="Logos" font-family="DINAlternate-Bold, DIN Alternate" font-size="50" font-weight="bold" fill="#000000">
+				<tspan x="20" y="57">
+					Color this sofa! - SVG + Blend Mode trick by Kyle Wetton
+				</tspan>
+			</text>
+		</a>
+		<foreignObject id="sofa_387" x="350" y="124" width="740" height="738">
+			<video width="740" height="738" autoplay muted loop>
+				<source src="/videos/sofa.mov.mp4" type="video/mp4" />
+			</video>
+		</foreignObject>
+	</g>
+</svg>
