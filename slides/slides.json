@@ -312,17 +312,25 @@
     ],
     "bullets": ["intro use", "supports transforms"]
   },
+  "361": {
+    "steps": 3,
+    "script": [
+      "This lets us use another smart feature of SVG - that you can nest SVGs inside SVGs",
+      "Nested SVGs retain their own co-ordinate system, so elements all render in the correct positions - much like embedding an image, but because we've embedded the whole file",
+      "We have the ability to change any attributes on the uploaded file."
+    ]
+  },
   "370": {
     "steps": 0,
     "script": [
-      "Regardless of the size at which the logo was drawn, we're able to make it fit perfectly into any of our placements by manipulating just three attributes on the uploaded SVG. \n\n We set the width and height to 100% - this tells the SVG to fill whatever box it's put inside - in this case that's the width and height we set on our use tag. We set the original width and height to the viewbox attribute, and this ensures that whatever size we try to draw it at, it will retain it's original aspect ratio.  \n\n Obviously we dont JUST change those three attributes, we also filter out any unwanted content so don't go getting any ideas about injecting a malicious script into your cycling jersey."
+      "Because nested SVGs have their own coordinate system, we're able to make an uploaded logo fit perfectly into any of our placements, regardless of what size it was drawn, by manipulating just three attributes on the nested SVG. \n\n Coordinate systems can be set with with a viewBox attribute or interpreted from the width and height, so if an uploaded logo has no viewbox we create one from it's width and height, and set the width and height to 100%. This tells the SVG to fill whatever box it's put inside - in this case that'll be the width and height we set on our use tag."
     ],
     "bullets": ["on screen"]
   },
   "380": {
     "steps": 0,
     "script": [
-      "So we don't need to do any maths to get it to fit the way we want it to, SVG handles it for us."
+      "This way we don't need to do any maths to get it to fit the way we want it to, SVG handles it for us."
     ],
     "bullets": ["no maths"]
   },
@@ -370,7 +378,7 @@
     "script": [
       "Using manufacturing on-demand, there’s no longer any need to make thousands of items up front.  The fact SVGs are immediately printable means the set up time and cost, that you have to pay for every variation of your product, is drastically reduced.",
       "After putting in the work to get your garment set up the first time,",
-      "you can create any number of styles without any extra effort or costs.  We don’t need to make thousands of garments that won’t be sold, we can make stuff quickly AFTER it’s been sold.  There’s no need for waste."
+      "you can create any number of styles without any extra effort or costs.  We don’t need to make thousands of garments that won’t be sold, we can even make items quickly AFTER they've been ordered.  There’s no need for waste."
     ]
   },
   "430": {

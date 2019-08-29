@@ -1,0 +1,46 @@
+@keyframes shirt {
+  0% {
+    fill: #040403;
+  }
+
+  25% {
+    fill: #f78ae0;
+  }
+
+  50% {
+    fill: #6c6864;
+  }
+
+  75% {
+    fill: #6638f0;
+  }
+}
+
+.xz-cls-2 {
+  fill: #040403;
+}
+.xz-cls-3 {
+  fill: #492414;
+}
+.xz-cls-4 {
+  fill: #90624e;
+}
+.xz-cls-5 {
+  fill: #b18372;
+}
+.xz-cls-6 {
+  fill: #784328;
+}
+
+#xz {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.step2 #xz {
+  opacity: 1;
+}
+
+.step3 .xz-cls-2 {
+  animation: shirt 5s infinite;
+}
