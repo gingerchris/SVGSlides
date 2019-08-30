@@ -4,23 +4,6 @@ let step;
 let slides;
 let slideKeys;
 
-let notesWindow;
-
-const updateScript = (script, step, hash) => {
-  if (withSpeakerNotes) {
-    const { steps, bullets } = slides[getHash()];
-    notesWindow.postMessage({
-      script,
-      step,
-      steps,
-      bullets,
-      slide: slideKeys.indexOf(hash),
-      slides: slideKeys.length - 1,
-      start: script === slides[10].script || getHash() === 12
-    });
-  }
-};
-
 const getHash = () =>
   window.location.hash ? parseFloat(window.location.hash.replace("#", "")) : 10;
 
@@ -29,7 +12,6 @@ const onHashChange = async () => {
   document.body.className = "";
   const hash = getHash();
   if (hash) {
-    updateScript(slides[hash].script, step - 1, hash);
     const path = `slides/${hash}`;
     iframe.setAttribute("src", path);
   }
@@ -53,12 +35,8 @@ const init = async () => {
     .map(Number)
     .sort((a, b) => (a < b ? -1 : 1));
 
-  if (withSpeakerNotes) {
-    notesWindow = window.open("/speaker.html", "speakerNotes");
-    await waitForNotesReady();
-  }
-
   onHashChange();
+  window.focus();
 };
 
 const goToSlide = key => {
@@ -80,7 +58,6 @@ const increment = () => {
     }
   }
   step += 1;
-  updateScript(script, step - 1, hash);
   iframe.contentWindow.postMessage({ step });
 };
 
@@ -102,17 +79,15 @@ window.addEventListener("message", ({ source, data }) => {
   }
 });
 
-if (!withSpeakerNotes) {
-  window.addEventListener("click", increment);
-  window.addEventListener("keydown", e => {
-    switch (e.key) {
-      case "ArrowRight":
-        return increment();
-      case "ArrowLeft":
-        return decrement();
-    }
-  });
-}
+window.addEventListener("click", increment);
+window.addEventListener("keydown", e => {
+  switch (e.key) {
+    case "ArrowRight":
+      return increment();
+    case "ArrowLeft":
+      return decrement();
+  }
+});
 
 navigator.serviceWorker.register("/service-worker.js", {
   scope: "/"

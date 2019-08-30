@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    svg,
+    iframe {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      overflow: hidden;
+      border: none;
+      width: 100vw;
+      height: calc((100vw / 16) * 9);
+      transform: translate(-50%, -50%);
+    }
+
+    iframe {
+      width: 100vw;
+      height: calc((100vw / 16) * 9);
+    }
+
+    #frame {
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body>
+  <iframe></iframe>
+  <svg id="frame" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg">
+    <text fill="#000" fill-rule="evenodd" font-family="DINAlternate-Bold, DIN Alternate" font-size="25"
+      font-weight="bold">
+      <tspan x="12" y="880">@gingerchris</tspan>
+      {{#unless presenter}}
+      <tspan x="300" y="880">Use arrow keys to navigate</tspan>
+      {{/unless}}
+      <tspan x="1250" y="880">Chris Dowling</tspan>
+    </text>
+  </svg>
+  <script src="index.js"></script>
+  <script src="scripts/TweenMax.min.js"></script>
+</body>
+
+</html>
