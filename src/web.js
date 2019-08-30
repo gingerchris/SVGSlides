@@ -46,7 +46,7 @@ const increment = () => {
     }
   }
   step += 1;
-  iframe.contentWindow.postMessage({ step });
+  iframe.contentWindow.postMessage({ step }, "*");
 };
 
 const decrement = () => {
@@ -73,8 +73,4 @@ window.addEventListener("keydown", e => {
     case "ArrowLeft":
       return decrement();
   }
-});
-
-navigator.serviceWorker.register("/service-worker.js", {
-  scope: "/"
 });

@@ -35,11 +35,11 @@ const formatSeconds = seconds => {
 };
 
 const post = message => {
-  iframe.contentWindow.postMessage(message);
+  iframe.contentWindow.postMessage(message, "*");
 };
 
 const setup = () => {
-  opener.postMessage("ready");
+  opener.postMessage("ready", "*");
 };
 
 const start = () => {
@@ -116,11 +116,11 @@ const handlePostMessage = ({ source, data }) => {
 };
 
 const increment = () => {
-  opener.postMessage("increment");
+  opener.postMessage("increment", "*");
 };
 
 const decrement = () => {
-  opener.postMessage("decrement");
+  opener.postMessage("decrement", "*");
 };
 
 const toggleScript = () => document.body.classList.toggle("notes");
