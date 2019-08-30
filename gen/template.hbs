@@ -23,19 +23,21 @@
 
 <body>
   <script>
+    {{#if presenter}}
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.register("/service-worker.js", {
         scope: '/'
       });
     }
+    {{/if}}
     {{#unless presenter}}
     window.addEventListener("keydown", e => {
       switch (e.key) {
         case "ArrowRight":
-          window.parent.postMessage('increment');
+          window.parent.postMessage('increment', '*');
           break;
         case "ArrowLeft":
-          window.parent.postMessage('decrement');
+          window.parent.postMessage('decrement', '*');
           break;
       }
     });
@@ -43,7 +45,7 @@
       const isTargetLink = e.target.tagName === 'A';
       const isTargetInsideLink = !!e.target.closest('a');
       if (!isTargetInsideLink && !isTargetInsideLink) {
-        window.parent.postMessage('increment');
+        window.parent.postMessage('increment', '*');
       }
     })
     {{/unless}}

@@ -7,15 +7,18 @@ let notesWindow;
 
 const updateScript = (script, step, hash) => {
   const { steps, bullets } = slides[getHash()];
-  notesWindow.postMessage({
-    script,
-    step,
-    steps,
-    bullets,
-    slide: slideKeys.indexOf(hash),
-    slides: slideKeys.length - 1,
-    start: script === slides[10].script || getHash() === 12
-  });
+  notesWindow.postMessage(
+    {
+      script,
+      step,
+      steps,
+      bullets,
+      slide: slideKeys.indexOf(hash),
+      slides: slideKeys.length - 1,
+      start: script === slides[10].script || getHash() === 12
+    },
+    "*"
+  );
 };
 
 const getHash = () =>
@@ -76,7 +79,7 @@ const increment = () => {
   }
   step += 1;
   updateScript(script, step - 1, hash);
-  iframe.contentWindow.postMessage({ step });
+  iframe.contentWindow.postMessage({ step }, "*");
 };
 
 const decrement = () => {
