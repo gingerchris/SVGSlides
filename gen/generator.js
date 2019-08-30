@@ -37,7 +37,14 @@ const generateIndex = (pathName, slideNum, hasCSS, hasJS, hasTweenMax) => {
   const SVG = fs.readFileSync(`${pathName}/${slideNum}.svg`);
   const CSS = hasCSS && fs.readFileSync(`${pathName}/${slideNum}.css`);
   const JS = hasJS && fs.readFileSync(`${pathName}/${slideNum}.js`);
-  const html = template({ slideNum, CSS, JS, hasTweenMax, SVG });
+  const html = template({
+    slideNum,
+    CSS,
+    JS,
+    hasTweenMax,
+    SVG,
+    presenter: !buildForWeb
+  });
   const exportPath = path.join(distSlidesPath, slideNum);
   mkDirIfNotExists(exportPath);
   fs.writeFileSync(`${exportPath}/index.html`, html);

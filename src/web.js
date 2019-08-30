@@ -1,5 +1,4 @@
 const iframe = document.querySelector("iframe");
-const withSpeakerNotes = true;
 let step;
 let slides;
 let slideKeys;
@@ -16,17 +15,6 @@ const onHashChange = async () => {
     iframe.setAttribute("src", path);
   }
 };
-
-const waitForNotesReady = () =>
-  new Promise(resolve => {
-    const handleMessage = ({ source, data }) => {
-      if (source === notesWindow && data === "ready") {
-        resolve();
-        window.removeEventListener("message", handleMessage);
-      }
-    };
-    window.addEventListener("message", handleMessage);
-  });
 
 const init = async () => {
   const slidesReq = await fetch("./slides/slides.json");
@@ -69,13 +57,11 @@ const decrement = () => {
 
 window.addEventListener("hashchange", onHashChange);
 window.addEventListener("message", ({ source, data }) => {
-  if (source === notesWindow) {
-    if (data === "increment") {
-      increment();
-    }
-    if (data === "decrement") {
-      decrement();
-    }
+  if (data === "increment") {
+    increment();
+  }
+  if (data === "decrement") {
+    decrement();
   }
 });
 

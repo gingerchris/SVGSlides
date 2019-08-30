@@ -28,6 +28,25 @@
         scope: '/'
       });
     }
+    {{#unless presenter}}
+    window.addEventListener("keydown", e => {
+      switch (e.key) {
+        case "ArrowRight":
+          window.parent.postMessage('increment');
+          break;
+        case "ArrowLeft":
+          window.parent.postMessage('decrement');
+          break;
+      }
+    });
+    window.addEventListener("click", (e) => {
+      const isTargetLink = e.target.tagName === 'A';
+      const isTargetInsideLink = !!e.target.closest('a');
+      if (!isTargetInsideLink && !isTargetInsideLink) {
+        window.parent.postMessage('increment');
+      }
+    })
+    {{/unless}}
   </script>
   <script src="/scripts/page.js"></script>
   {{{SVG}}}
