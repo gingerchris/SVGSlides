@@ -15,10 +15,10 @@
       width: 100vw;
       height: 100vh;
     }
+    {{#if CSS}}
+     {{{ CSS }}}
+    {{/if}}
   </style>
-  {{#if hasCSS}}
-  <link href="{{slideNum}}.css" rel="stylesheet" type="text/css" />
-  {{/if}}
 </head>
 
 <body>
@@ -31,8 +31,10 @@
   </script>
   <script src="/scripts/page.js"></script>
   {{{SVG}}}
-  {{#if hasJS}}
-  <script src="{{slideNum}}.js"></script>
+  {{#if JS}}
+  <script>
+    {{{ JS }}}
+  </script>
   {{/if}}
   {{#if hasTweenMax}}
   <script src="/scripts/TweenMax.min.js"></script>

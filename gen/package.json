@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "handlebars": "^4.1.2",
+    "ncp": "^2.0.0",
     "node-watch": "^0.6.2"
   }
 }
