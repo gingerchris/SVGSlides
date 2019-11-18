@@ -114,5 +114,16 @@
 				Copy the entire file?
 			</tspan>
 		</text>
+		<text transform="translate(-120 -90)" id="yo-dawg" fill="#FFF" stroke="#000" stroke-width="2" font-family="Impact" font-size="48" font-style="condensed" font-weight="700">
+			<tspan x="528.472" y="352.89">
+				YO DAWG, I PUT AN SVG IN YOUR SVG
+			</tspan>
+			<tspan id="mod" x="563.921" y="758.89" font-size="48">
+				SO YOU CAN SVG WHILE YOU SVG
+			</tspan>
+			<tspan id="mod2" x="563.921" y="808.89" font-size="48">
+				
+			</tspan>
+		</text>
 	</g>
 </svg>

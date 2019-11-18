@@ -32,15 +32,12 @@
   fill: #784328;
 }
 
-#xz {
+#xz, #yo-dawg {
   opacity: 0;
   transition: opacity 0.3s ease-in;
 }
 
-.step2 #xz {
+.step2 #xz, .step2 #yo-dawg {
   opacity: 1;
 }
 
-.step3 .xz-cls-2 {
-  animation: shirt 5s infinite;
-}
