@@ -61,6 +61,7 @@ const copyOtherAssets = () => {
   ncp(path.join(srcPath, "favicon.ico"), path.join(distPath, "favicon.ico"));
   ncp(path.join(srcPath, "scripts"), path.join(distPath, "scripts"));
   ncp(path.join(srcPath, "common"), path.join(distPath, "common"));
+  ncp(path.join(srcPath, "logos"), path.join(distPath, "logos"));
   ncp(path.join(srcPath, "videos"), path.join(distPath, "videos"));
   ncp(
     path.join(srcPath, "slides/slides.json"),

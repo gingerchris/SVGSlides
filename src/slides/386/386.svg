@@ -13,35 +13,59 @@
 		</foreignObject>
 		<g class="slideprev" id="slide1_386">
 			<rect width="458" height="286" stroke="black" fill="white" />
-			<image href="/slides/30/30.svg" width="458" height="286" />
+			<foreignObject width="458" height="286">
+				<iframe src="/slides/80/index.html" width="458" height="286">
+				</iframe>
+			</foreignObject>
 		</g>
 		<g class="slideprev" id="slide2_386">
 			<rect width="458" height="286" stroke="black" fill="white" />
-			<image href="/slides/80/80.svg" width="458" height="286" />
+			<foreignObject width="458" height="286">
+				<iframe src="/slides/120/index.html" width="458" height="286">
+				</iframe>
+			</foreignObject>
 		</g>
 		<g class="slideprev" id="slide3_386">
 			<rect width="458" height="286" stroke="black" fill="white" />
-			<image href="/slides/100/100.svg" width="458" height="286" />
+			<foreignObject width="458" height="286">
+				<iframe src="/slides/100/index.html" width="458" height="286">
+				</iframe>
+			</foreignObject>
 		</g>
 		<g class="slideprev" id="slide4_386">
 			<rect width="458" height="286" stroke="black" fill="white" />
-			<image href="/slides/140/140.svg" width="458" height="286" />
+			<foreignObject width="458" height="286">
+				<iframe src="/slides/140/index.html" width="458" height="286">
+				</iframe>
+			</foreignObject>
 		</g>
 		<g class="slideprev" id="slide5_386">
 			<rect width="458" height="286" stroke="black" fill="white" />
-			<image href="/slides/150/150.svg" width="458" height="286" />
+			<foreignObject width="458" height="286">
+				<iframe src="/slides/150/index.html" width="458" height="286">
+				</iframe>
+			</foreignObject>
 		</g>
 		<g class="slideprev" id="slide6_386">
 			<rect width="458" height="286" stroke="black" fill="white" />
-			<image href="/slides/190/190.svg" width="458" height="286" />
+			<foreignObject width="458" height="286">
+				<iframe src="/slides/190/index.html" width="458" height="286">
+				</iframe>
+			</foreignObject>
 		</g>
 		<g class="slideprev" id="slide7_386">
 			<rect width="458" height="286" stroke="black" fill="white" />
-			<image href="/slides/210/210.svg" width="458" height="286" />
+			<foreignObject width="458" height="286">
+				<iframe src="/slides/210/index.html" width="458" height="286">
+				</iframe>
+			</foreignObject>
 		</g>
 		<g class="slideprev" id="slide8_386">
 			<rect width="458" height="286" stroke="black" fill="white" />
-			<image href="/slides/320/320.svg" width="458" height="286" />
+			<foreignObject width="458" height="286">
+				<iframe src="/slides/320/index.html" width="458" height="286">
+				</iframe>
+			</foreignObject>
 		</g>
 	</g>
 </svg>

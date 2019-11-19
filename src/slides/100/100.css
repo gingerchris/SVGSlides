@@ -1,0 +1,20 @@
+#newcastle,
+#prison {
+  transition: 0.3s opacity ease-in-out;
+}
+
+#newcastle {
+  opacity: 0;
+}
+
+#prison {
+  opacity: 0;
+}
+
+.step2 #newcastle {
+  opacity: 1;
+}
+
+.step3 #prison {
+  opacity: 1;
+}

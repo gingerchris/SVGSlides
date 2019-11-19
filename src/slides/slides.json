@@ -1,7 +1,9 @@
 {
   "10": {
     "steps": 0,
-    "script": ["Hi I’m Chris and I work at Unmade where we’re working with big brands in the Fashion industry to enable them to produce one-off and short-run garments using the same machinery and, at roughly the same unit cost, as all their mass produced stuff."]
+    "script": [
+      "Hi I’m Chris and I work at Unmade where we’re working with big brands in the Fashion industry to enable them to produce one-off and short-run garments using the same machinery and, at roughly the same unit cost, as all their mass produced stuff."
+    ]
   },
   "12": {
     "steps": 0,
@@ -120,10 +122,11 @@
     ]
   },
   "100": {
-    "steps": 0,
+    "steps": 3,
     "script": [
-      "Firstly, not all the panels on our layplan are oriented the same way. They're arranged and rotated to save material.",
-      "A pattern anchored to the document would not look right when applied to a rotated panel. As you can see here, the sleeves have been rotated on the layplan and as a result the stripes are going the wrong way."
+      "Firstly, not all the panels on our layplan are oriented the same way. They're arranged and rotated to save material.\n\nA pattern anchored to the document would not look right when applied to a rotated panel. As you can see here, the sleeves have been rotated on the layplan and",
+      "as a result, your Newcastle United replica cycling kit",
+      "now has sleeves from a cartoon prisoner haloween costume."
     ],
     "bullets": ["panels arranged and rotated"]
   },
@@ -153,8 +156,8 @@
   "140": {
     "steps": 2,
     "script": [
-      "So we had a crack at duplicating the patterns, one per panel, and applying transformations like that.",
-      "But this was very repetitive.  I’ve truncated the worst of it here, but if we expanded these dots you’d see the exact same set of elements repeated so many times it would make you physically sick.\n\nEven though I’m willing to stand up here and tell you that I wrote this code, I was not about to publish  it for a code review and soil my GitHub profile forever.\n\nIt was not sustainable.  There had to be a better way"
+      "So we had a crack at duplicating the patterns, one per panel, and applying transformations like that.\n\nBut this was very repetitive.  I’ve truncated the worst of it here, but if we expanded these dots you’d see the exact same set of elements repeated so many times it would make you physically sick.\n\nEven though I’m willing to stand up here and tell you that I wrote this code, I was not about to publish  it for a code review and permanently soil my GitHub profile.",
+      "It was not sustainable.  There had to be a better way"
     ],
     "bullets": [
       "so we tried duplicating, but it got hectic",
