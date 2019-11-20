@@ -1,16 +1,20 @@
 #thirtysix-logo-one,
 #thirtysix-logo-two,
 #thirtysix-logo-three {
-  opacity: 0;
-  transition: opacity 0s;
+  transition: all 1.5s ease-in-out;
 }
 
-#thirtysix-logo-two {
-  transition-delay: 0.5s;
+.step2 #thirtysix-logo-two {
+  transform: translate(500px, 300px) scale(0.6) rotate(28deg);
+}
+
+.step2 #thirtysix-logo-three {
+  transform: translate(701px, 250px) scale(2.5) rotate(-10deg)
+    translate(-251px, -199px);
 }
 
 #thirtysix-logo-three {
-  transition-delay: 1s;
+  transition-delay: 2s;
 }
 
 .step2 #thirtysix-logo-one,

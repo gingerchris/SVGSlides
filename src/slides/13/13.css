@@ -1,0 +1,44 @@
+#printer1,
+#printer2,
+#printer3,
+#printer4,
+#printer5,
+#printer6,
+#printer7 {
+  opacity: 0;
+  transition: opacity 0s;
+}
+
+.step2 #printer1,
+.step2 #printer2,
+.step2 #printer3,
+.step2 #printer4,
+.step2 #printer5,
+.step2 #printer6,
+.step2 #printer7 {
+  opacity: 1;
+}
+
+#printer1 {
+  transition-delay: 0.5s;
+}
+
+#printer5 {
+  transition-delay: 1.5s;
+}
+
+#printer6 {
+  transition-delay: 2s;
+}
+
+#printer2 {
+  transition-delay: 2.5s;
+}
+
+#printer3 {
+  transition-delay: 1s;
+}
+
+#printer4 {
+  transition-delay: 3s;
+}
