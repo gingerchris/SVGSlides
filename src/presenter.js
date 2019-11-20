@@ -1,3 +1,11 @@
+const fullscreen = () => {
+  document.documentElement.requestFullscreen();
+};
+
+const fsButton = document.querySelector("#fs");
+
+fsButton.addEventListener("click", fullscreen, false);
+
 const iframe = document.querySelector("iframe");
 let step;
 let slides;

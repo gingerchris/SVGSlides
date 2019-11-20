@@ -27,10 +27,25 @@
     #frame {
       pointer-events: none;
     }
+
+    #fs {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      z-index: 99;
+    }
+
+    #fs:hover {
+      opacity: 1;
+    }
   </style>
 </head>
 
 <body>
+  <button id="fs">fs</button>
   <iframe></iframe>
   <svg id="frame" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg">
     <text fill="#000" fill-rule="evenodd" font-family="DINAlternate-Bold, DIN Alternate" font-size="25"
