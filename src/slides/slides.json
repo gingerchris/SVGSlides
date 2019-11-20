@@ -8,13 +8,13 @@
   "12": {
     "steps": 0,
     "script": [
-      "Initially what this meant was that you could go to the website of one of our customer brands, design, say, a jumper, to look exactly how you want it, then we can convert the design from your browser into a program that runs on an industrial knitting machine and get your jumper knitted.  Which is pretty cool, right?  I mean who doesn’t want a custom cosy merino jumper or scarf?"
+      "Initially what this meant was that you could go one of our customer's websites, design, say, a jumper, to look exactly how you want it, then we can convert the design from your browser into a program that runs on an industrial knitting machine and get your jumper knitted.  Which is pretty cool, right?  I mean who doesn’t want a custom cosy merino jumper or scarf?\n\nWell, as it turns out, quite a lot of the brands we spoke to.  They were kinda like \"yeah knitwear is cool, but can you do any other kind of manufacturing?\""
     ]
   },
   "13": {
     "steps": 2,
     "script": [
-      "Well, as it turns out, Rapha.  They liked the look of our system and wanted to use it for their custom offering, to let cycle clubs design their own Rapha kit, but most cycle kit isn't knitted, it's sublimation printed.  We thought we'd have a crack at it, I mean, we've reverse-engineered an industrial knitting machine and people use printers every day, how hard could it be?"
+      "One of these brands was Rapha.  They liked the look of our system and wanted to use it for their custom offering, to let cycle clubs design their own Rapha kit.  But most cycle kit isn't knitted, it's sublimation printed.  We thought we'd have a crack at it, I mean, we've reverse-engineered an industrial knitting machine and people use printers every day, how hard could it be?"
     ]
   },
   "14": {
@@ -317,10 +317,11 @@
     "bullets": ["use easy for pattern match", "just draw to center"]
   },
   "386": {
-    "steps": 2,
+    "steps": 3,
     "script": [
       "This is just one example of something cool that we’ve accomplished with SVG.\n\nA lot of people I’ve spoken to have only considered it for icons, or basic shape drawing but there’s actually loads of cool stuff it can do. \n\nI’ve used it for tiny UI details like this animated tick box,",
-      "but I’ve also used it to prepare this talk - all these slides are SVGs and I’ve found it far easier to get across SVG concepts using actual SVGs than trying to use something like keynote."
+      "but I’ve also used it to prepare this talk - all these slides are SVGs and I’ve found it far easier to get across SVG concepts using actual SVGs than trying to use something like keynote.",
+      "And just this week, Chrome have released support for SVG favicons, and that includes SVG with CSS so you can easily animate your favicon or perhaps do something a bit more useful, like using the prefers-color-scheme media query to serve a dark or light favicon based on user preference"
     ]
   },
   "387": {

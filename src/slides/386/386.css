@@ -45,3 +45,10 @@
 .step2 .slideprev {
   opacity: 1;
 }
+
+.step3 #favi {
+  display: block;
+}
+#favi {
+  display: none;
+}
